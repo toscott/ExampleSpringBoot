@@ -1,0 +1,19 @@
+spring:
+  data:
+    rest:
+      basePath: /internal-api
+  profile:
+    active: default
+  profiles: default
+
+---
+#This section will hold settings for development mode
+spring:
+  profiles: development
+management:
+  security:
+    enabled: false
+---
+#This section will hold settings for production mode
+spring:
+  profiles: production
