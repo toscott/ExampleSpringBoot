@@ -5,8 +5,8 @@ An Example Spring Boot Application using:
 * OpenId Connect Using Google
 
 ### Prereqs:
-Java 8+
-Google APIs ClientId & Secret: See https://developers.google.com/identity/protocols/OAuth2WebServer
+* Java 8+
+* Google APIs ClientId & Secret: See https://developers.google.com/identity/protocols/OAuth2WebServer
 
 ### To Build:
 {project-home}/gradlew
