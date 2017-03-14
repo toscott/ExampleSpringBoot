@@ -4,12 +4,17 @@ spring:
       basePath: /internal-api
   profile:
     active: default
-  profiles: default
-
+google:
+  clientId: ${GOOGLE_CLIENT_ID}
+  clientSecret: ${GOOGLE_CLIENT_SECRET}
+  accessTokenUri: https://www.googleapis.com/oauth2/v3/token
+  userAuthorizationUri: https://accounts.google.com/o/oauth2/v2/auth
 ---
 #This section will hold settings for development mode
 spring:
-  profiles: development
+  profiles: local
+google:
+  redirectUri: http://localhost:8080/google-login
 management:
   security:
     enabled: false
