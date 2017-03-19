@@ -1,22 +1,25 @@
-package com.example.helloworld;
+package com.example.user;
 
-/**
- * Created by jkurtz on 3/14/2017.
- */
-public class User
-{
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
+public class User {
+
+    @Id
+    @GeneratedValue
+    private Long id;
     private String name;
     private String email;
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
-
-    private Integer id;
 
     public String getName() {
         return name;
